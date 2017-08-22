@@ -1,0 +1,67 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+/*--About Home Page--*/
+.home-img {
+	position: relative;
+	background-size: cover;
+	background-image: url(/images/about.jpg);
+	min-height: 100%;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+  	width: 100%;
+  	text-align: center;
+  	color: white;
+  	letter-spacing: 2px;
+  	font-size: 40px;
+}
+
+/*--Profile Picture & Bio--*/
+.container {
+	display: table;
+	color: black;
+	padding: 50px 80px;
+	text-align: left;
+}
+
+img {
+	float: right;
+	padding: 20px 30px;
+	width: 100%;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+span {
+	vertical-align: middle;
+	display: table-cell;
+	width: 50%;
+}
+
+@media (max-width: 600px) {
+	.container {
+		display: block;
+		padding: 0;
+	}
+  	img {
+  		float: none;
+  		padding: 10% 0;
+  		display: block;
+  		width: 100%;
+  	}
+  	span {
+  		padding-left: 10%;
+  		display: block;
+  		width: 80%;
+  	}
+  	.text {padding-bottom: 10%;}
+}
+

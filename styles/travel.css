@@ -1,0 +1,95 @@
+html {
+	height: 100%;
+	margin: 0;
+	overflow-y: scroll;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+/*--Travel Home Image--*/
+.trvl-img {
+	background-image: url(/images/travel.jpg);
+	position: relative;
+	background-size: cover;
+	min-height: 100%;
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+/*Hover Business--*/
+.item img {
+	transition: .3 ease;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	color: white;
+	font-size: 30px;
+}
+
+.item:hover {
+	opacity: 0.9;
+}
+
+/*--Image Buffer--*/
+.buffer {
+	text-align: center; 
+	text-align: justify;
+	padding: 50px 80px;
+	font-size: 19px;
+}
+
+
+/*--Grid--*/
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.grid-sizer, .item {
+	width: 50%;
+}
+
+/*--Grid Item--*/
+.item {
+	float: left;
+	
+}
+
+.item img {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+/*--Respsonseness of images--*/
+@media (max-width: 600px) {
+  .item {
+  	width: 100%;
+  }
+}
+/*
+@media (max-width: 400px) {
+  .item {
+  	width: 100%;
+  }
+}
+*/
